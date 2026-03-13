@@ -26,15 +26,15 @@
 }
 
 .judo-slide {
-  width: 180px;
+  width: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .carousel-card {
-  width: 180px;
-  height: 210px;
+  width: 270px;
+  height: 315px;
   border: 2px solid #123447;
   border-radius: 28px;
   overflow: hidden;
@@ -74,7 +74,7 @@
 }
 
 .card-title {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -131,16 +131,16 @@
   }
 
   .judo-slide {
-    width: 210px;
+    width: 315px;
   }
 
   .carousel-card {
-    width: 210px;
-    height: 228px;
+    width: 315px;
+    height: 342px;
   }
 
   .card-title {
-    font-size: 1.12rem;
+    font-size: 1.35rem;
   }
 
   .content-panel {
@@ -156,11 +156,11 @@
   }
 
   .judo-slide {
-    width: 230px;
+    width: 345px;
   }
 
   .carousel-card {
-    width: 230px;
-    height: 240px;
+    width: 345px;
+    height: 360px;
   }
 }
