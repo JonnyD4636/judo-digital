@@ -4,9 +4,14 @@
 
     <div class="level-card__body">
       <div class="badge" aria-label="Badge">
-        <div class="badge__inner">
-          <div class="badge__brand">BRITISH JUDO</div>
-          <div class="badge__label">{{ card.badgeLabel }}</div>
+        <div class="badge__inner" [class.badge__inner--image]="!!card.badgeImage">
+          <ng-container *ngIf="card.badgeImage; else badgeText">
+            <img class="badge__image" [src]="card.badgeImage" [alt]="card.badgeLabel" style="width: 100%; height: auto;" />
+          </ng-container>
+          <ng-template #badgeText>
+            <div class="badge__brand">BRITISH JUDO</div>
+            <div class="badge__label">{{ card.badgeLabel }}</div>
+          </ng-template>
         </div>
       </div>
 
