@@ -48,7 +48,7 @@ export class HomePage implements AfterViewInit {
   cards: DashboardCard[] = [
     {
       key: 'profile',
-      title: 'Profile',
+      title: 'Personal Details',
       image: 'assets/images/profile-placeholder.png',
     },
     {
