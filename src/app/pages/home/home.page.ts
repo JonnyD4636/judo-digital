@@ -53,7 +53,7 @@ export class HomePage implements AfterViewInit {
     },
     {
       key: 'referee',
-      title: 'Referee',
+      title: 'Officiating',
       image: 'assets/images/referee-placeholder.png',
     },
     {
