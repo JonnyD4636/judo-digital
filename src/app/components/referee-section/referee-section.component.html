@@ -25,7 +25,16 @@
           </div>
         </div>
       </ng-container>
-      <ng-container *ngIf="card.currencyPercent === 0">
+      <ng-container *ngIf="card.badgeImage !== 'assets/images/badges/plain-badge.png'">
+        <div class="metric">
+          <div class="metric__label">CURRENCY</div>
+          <div class="bar" aria-label="Currency">
+            <div class="bar__fill" [style.width.%]="card.currencyPercent"></div>
+            <div class="bar__knob" [style.left.%]="card.currencyPercent"></div>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="card.badgeImage === 'assets/images/badges/plain-badge.png'">
         <div class="metric">
           <div class="metric__label">No Qualification Held</div>
         </div>
