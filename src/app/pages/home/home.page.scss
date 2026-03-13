@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 .carousel-shell {
   width: 100%;
   overflow: hidden;
@@ -113,6 +114,14 @@
   align-items: center;
   gap: 24px;
   width: 100%;
+}
+
+.build-stamp {
+  margin-top: 8px;
+  opacity: 0.55;
+  font-size: 12px;
+  text-align: center;
+  user-select: text;
 }
 
 @media (min-width: 768px) {
