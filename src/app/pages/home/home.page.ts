@@ -58,7 +58,7 @@ export class HomePage implements AfterViewInit {
     },
     {
       key: 'admin',
-      title: 'Admin Bod',
+      title: 'Appointments',
       image: 'assets/images/admin-placeholder.png',
     },
     {
