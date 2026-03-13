@@ -73,10 +73,9 @@
 .badge__image {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover; /* Adjusting to cover for fill effect */
   display: block;
-  max-width: 160px; /* Adjust max width as needed for badge filling */
-  max-height: 160px; /* Adjust max height based on your requirement */
+  transform: scale(1.5); /* Zoom effect of 150% */
 }
 
 .metrics {
