@@ -32,9 +32,9 @@ export class RefereeSectionComponent {
       key: 'technical',
       title: 'Technical Official Level',
       badgeLabel: 'Technical Official',
-      badgeImage: 'assets/images/badges/technical-official.png',
-      currencyPercent: 55,
-      progressionPercent: 20,
+      badgeImage: 'assets/images/badges/plain-badge.png',
+      currencyPercent: 0,
+      progressionPercent: 0,
     },
     {
       key: 'gradeExaminer',
