@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="login-page">
+  <div class="login-wrapper">
+    <div class="login-card">
+      <h1 class="app-title">Judo Digital</h1>
+      <p class="app-subtitle">Track your development journey</p>
+
+      <div class="form-group">
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div class="form-group">
+        <input type="password" placeholder="Password" />
+      </div>
+
+      <div class="button-row">
+        <button class="primary-btn" (click)="goToHome()">Login</button>
+        <button class="secondary-btn">Sign Up</button>
+      </div>
+
+      <button class="forgot-btn">Forgot password</button>
+    </div>
+  </div>
+</ion-content>

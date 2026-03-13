@@ -1,0 +1,10 @@
+.section-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.section-item{
+  padding:14px;
+  border:2px solid #123447;
+}

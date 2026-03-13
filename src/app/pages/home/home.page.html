@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true" class="home-page">
+  <div class="dashboard-page">
+    <div class="carousel-shell">
+      <swiper-container
+        #swiperEl
+        class="judo-swiper"
+        init="false"
+        aria-label="Judo development section carousel"
+      >
+        <swiper-slide
+          *ngFor="let card of cards; trackBy: trackByCardKey"
+          class="judo-slide"
+        >
+          <button
+            type="button"
+            class="carousel-card"
+            [class.active]="selectedSection === card.key"
+            (click)="slideToSection(card.key)"
+          >
+            <img
+              class="card-image"
+              [src]="card.image"
+              [alt]="card.title"
+            />
+
+            <div class="card-overlay">
+              <span class="card-title">{{ card.title }}</span>
+            </div>
+          </button>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+
+    <div class="content-panel">
+      <ng-container [ngSwitch]="selectedSection">
+        <div *ngSwitchCase="'profile'" class="panel-content">
+          <app-profile-section></app-profile-section>
+        </div>
+
+        <div *ngSwitchCase="'referee'" class="panel-content">
+          <app-referee-section></app-referee-section>
+        </div>
+
+        <div *ngSwitchCase="'admin'" class="panel-content">
+          <app-admin-section></app-admin-section>
+        </div>
+
+        <div *ngSwitchCase="'athlete'" class="panel-content">
+          <app-athlete-section></app-athlete-section>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</ion-content>
