@@ -1,13 +1,34 @@
-<h2>Referee Development</h2>
+<div class="referee-section">
+  <div class="level-card" *ngFor="let card of cards; trackBy: trackByTitle">
+    <div class="level-card__header">{{ card.title }}</div>
 
-<div class="section-list">
+    <div class="level-card__body">
+      <div class="badge" aria-label="Badge">
+        <div class="badge__inner">
+          <div class="badge__brand">BRITISH JUDO</div>
+          <div class="badge__label">{{ card.badgeLabel }}</div>
+        </div>
+      </div>
 
-  <div class="section-item">Competition Log</div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric__label">CURRENCY</div>
+          <div class="bar" aria-label="Currency">
+            <div class="bar__fill" [style.width.%]="card.currencyPercent"></div>
+            <div class="bar__knob" [style.left.%]="card.currencyPercent"></div>
+          </div>
+        </div>
 
-  <div class="section-item">Theory Progress</div>
-
-  <div class="section-item">Assessments</div>
-
-  <div class="section-item">Qualification Pathway</div>
-
+        <div class="metric">
+          <div class="metric__label">PROGRESSION</div>
+          <div class="progress" aria-label="Progression">
+            <div class="progress__fill" [style.width.%]="card.progressionPercent"></div>
+          </div>
+          <div class="ticks" aria-hidden="true">
+            <span *ngFor="let t of ticks">{{ t }}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
