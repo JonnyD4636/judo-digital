@@ -5,6 +5,7 @@ type LevelCard = {
   key: 'referee' | 'technical' | 'gradeExaminer' | 'kataExaminer';
   title: string;
   badgeLabel: string;
+  badgeImage?: string;
   currencyPercent: number;
   progressionPercent: number;
 };
@@ -23,6 +24,7 @@ export class RefereeSectionComponent {
       key: 'referee',
       title: 'Referee Level',
       badgeLabel: 'Area Referee',
+      badgeImage: 'assets/images/badges/area-referee.png',
       currencyPercent: 72,
       progressionPercent: 35,
     },
@@ -30,6 +32,7 @@ export class RefereeSectionComponent {
       key: 'technical',
       title: 'Technical Official Level',
       badgeLabel: 'Technical Official',
+      badgeImage: 'assets/images/badges/technical-official.png',
       currencyPercent: 55,
       progressionPercent: 20,
     },
@@ -37,13 +40,15 @@ export class RefereeSectionComponent {
       key: 'gradeExaminer',
       title: 'Grade Examiner Level',
       badgeLabel: 'Senior Examiner',
+      badgeImage: 'assets/images/badges/senior-examiner.png',
       currencyPercent: 40,
       progressionPercent: 10,
     },
     {
       key: 'kataExaminer',
       title: 'Kata Examiner Level',
-      badgeLabel: 'Kata Examiner',
+      badgeLabel: 'Senior Kata Examiner',
+      badgeImage: 'assets/images/badges/senior-kata-examiner.png',
       currencyPercent: 25,
       progressionPercent: 5,
     },
